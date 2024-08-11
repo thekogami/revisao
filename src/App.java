@@ -1,6 +1,7 @@
 import entidades.Cidade;
 import entidades.Cliente;
 import entidades.ClienteRecord;
+import entidades.Pokemon;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -21,5 +22,20 @@ public class App {
         var joinville = new Cidade("Joinville");
         cliente.setCidade(joinville);
         System.out.println(cliente.getCidade().toString());
+
+        var pikaxu = new Pokemon("Pikaxu");
+        var charmander = new Pokemon("Charmander");
+        var squirtle = new Pokemon("Squirtle");
+        var bulbasaur = new Pokemon("Bulbasaur");
+        var jigglypuff = new Pokemon("Jigglypuff");
+        var psyduck = new Pokemon("Psyduck");
+
+        cliente.getPokemons().add(pikaxu);
+        cliente.getPokemons().add(charmander);
+        cliente.getPokemons().add(squirtle);
+        cliente.getPokemons().add(bulbasaur);
+        cliente.getPokemons().add(jigglypuff);
+        cliente.getPokemons().add(psyduck);
+        System.out.println(cliente.getPokemons());
     }
 }

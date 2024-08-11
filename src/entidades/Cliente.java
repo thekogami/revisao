@@ -1,9 +1,20 @@
 package entidades;
 
+import java.util.ArrayList;
+
 public class Cliente {
     private String nome;
     private String endereco;
     private Cidade cidade;
+    private ArrayList<Pokemon> pokemons = new ArrayList<Pokemon>();
+
+    public ArrayList getPokemons() {
+        return pokemons;
+    }
+
+    public void setPokemons(ArrayList pokemons) {
+        this.pokemons = pokemons;
+    }
 
     public Cidade getCidade() {
         return cidade;
