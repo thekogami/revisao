@@ -14,7 +14,8 @@ public class minhatela extends JFrame {
         Uni.setFont(new java.awt.Font("Arial", java.awt.Font.BOLD, 20));
 
         var newBotao = new JButton("Clique aqui");
-
+        var controller = new controller.ControllerTela();
+        newBotao.addActionListener(controller);
 
 
         getContentPane().add("North",meuTexto);
